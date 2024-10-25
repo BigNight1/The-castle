@@ -14,13 +14,15 @@ export default function Home() {
   };
   return (
     <div className="h-[100vh] flex flex-col ">
+      {/* Img Test */}
       <header className="flex justify-center">
       <img
           src={images[currentView]}
           alt={currentView}
-          className="mx-auto  h-auto"
+          className="h-[360px] w-full"
         />
       </header>
+      {/* Actions and Taskbar */}
       <div className="w-full h-full flex flex-col">
         <div className="flex-grow py-2">
           <Actions />
