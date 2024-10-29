@@ -8,7 +8,13 @@ const Actions = ({ actions }) => {
           <p className="text-gray-500 text-center col-span-2">No available actions right now</p>
         ) : (
           actions.map((action, index) => (
-            <ActionCard key={index} title={action.title} cost={action.cost} callback={action.callback} />
+            <ActionCard
+              key={index}
+              title={action.title}
+              cost={action.cost}
+              callback={action.callback}
+              metadata={action.metadata}
+            />
           ))
         )}
       </div>
