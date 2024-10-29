@@ -59,7 +59,7 @@ export function ResourcesProvider({ children }) {
     }
 
     if (resourceToSpend.amount < amount) {
-      setError(`Not enough ${type}. Have: ${resourceToSpend.amount}, Need: ${amount}`)
+      setError(`Not enough ${resourceToSpend.display}. Have: ${resourceToSpend.amount}, Need: ${amount}`)
       return false
     }
 
